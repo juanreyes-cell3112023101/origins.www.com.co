@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me Origins</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background-color:#000000;
+color:white;
+}
+
+/* NAV */
+nav{
+background:black;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+nav h1{
+color:#00A2FF;
+font-size:28px;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00A2FF;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(180deg,#000000,#001f3f);
+text-align:center;
+padding-top:80px;
+}
+
+.hero h2{
+font-size:50px;
+color:#00A2FF;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:white;
+}
+
+/* SECTIONS */
+section{
+padding:100px 50px;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#00A2FF;
+}
+
+/* CATALOGO */
+.catalogo{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.producto{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.producto:hover{
+transform:scale(1.05);
+}
+
+.producto img{
+width:100%;
+border-radius:10px;
+}
+
+.producto h3{
+margin-top:15px;
+color:white;
+}
+
+/* CONTACTO */
+.contacto{
+text-align:center;
+}
+
+.contacto p{
+margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+color:#00A2FF;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>ME ORIGINS</h1>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#catalogo">Catálogo</a></li>
+<li><a href="#nosotros">Sobre Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<div class="hero" id="inicio">
+<h2>ME ORIGINS</h2>
+<p>Donde nace tu estilo.</p>
+</div>
+
+<section id="catalogo">
+<h2 class="section-title">Catálogo</h2>
+<div class="catalogo">
+
+<div class="producto">
+<img src="https://via.placeholder.com/400x400.png?text=Producto+1" alt="Producto 1">
+<h3>Producto 1</h3>
+</div>
+
+<div class="producto">
+<img src="https://via.placeholder.com/400x400.png?text=Producto+2" alt="Producto 2">
+<h3>Producto 2</h3>
+</div>
+
+<div class="producto">
+<img src="https://via.placeholder.com/400x400.png?text=Producto+3" alt="Producto 3">
+<h3>Producto 3</h3>
+</div>
+
+</div>
+</section>
+
+<section id="nosotros">
+<h2 class="section-title">Sobre Nosotros</h2>
+<p style="text-align:center;max-width:700px;margin:auto;">
+Me Origins representa el inicio de algo grande. Una marca creada para expresar identidad,
+fuerza y estilo con la energía del azul eléctrico, la pureza del blanco y el poder del negro.
+</p>
+</section>
+
+<section id="contacto">
+<h2 class="section-title">Contacto</h2>
+<div class="contacto">
+<p>Email: meorigins@gmail.com</p>
+<p>Instagram: @meorigins</p>
+</div>
+</section>
+
+<footer>
+© 2026 Me Origins - Todos los derechos reservados
+</footer>
+
+</body>
+</html>
